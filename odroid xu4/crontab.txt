@@ -1,0 +1,5 @@
+# python 3.5 habe ich von den sourcen installiert. python3 funktioniert in der cron nicht
+@reboot /usr/local/bin/python3.5 /home/bguenthe/python/websocketserver.py >>/home/bguenthe/python/websocketserver.log 2>&1 &
+#@reboot /usr/local/bin/python3.5 /home/bguenthe/python/mqtt_publisher.py >>/home/bguenthe/python/mqtt_publisher.log 2>&1 &
+@reboot /usr/local/bin/python3.5 /home/bguenthe/python/mqtt_howareyou.py >>/home/bguenthe/python/mqtt_howareyou.log 2>&1 &
+@reboot /usr/local/bin/hass --open-ui
